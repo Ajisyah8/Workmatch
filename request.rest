@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJQZXJtYW5hIEFqaSIsImVtYWlsIjoiZW1haWxAZ21haWwuY29tIiwiaWF0IjoxNzAyMDI4ODEzLCJleHAiOjE3MDIwMjg4MzN9.kAY92Ft0MDBMHqCFb1wdvqZLHYgI_yPi9RFRww-yKSo
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Permana Aji",
+    "email": "email1@gmail.com",
+    "password": "123456",
+    "confPassword": "1234567"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "email@gmail.com",
+    "password" : "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+###
+
+POST http://localhost:5000/verification
